@@ -67,13 +67,13 @@
       <logger type="overview-pyramid" outfile="${project.basedir}/build/overview-pyramid.svg"/> 
     </phpdepend> 
   </target> 
-  <target name="phpmd" depends="prepare" description="PMD analýza"> 
+  <!--target name="phpmd" depends="prepare" description="PMD analýza"> 
     <phpmd rulesetfiles="unusedcode">
 	    <formatter type="xml" outfile="${project.basedir}/build/pmd.xml"/> 
 	    <fileset refid="src"/> 
 		<fileset refid="tests"/> 
     </phpmd>
-  </target> 
+  </target--> 
   <target name="phpcb" depends="phpcs, phpcpd, phpmd" description="Vygeneruje souhrnný výstup chyb v kódu pomocí PHP_CodeBrowser"> 
     <exec command="phpcb --log ${project.basedir}/build --source ${project.basedir} --output ${project.basedir}/build/code-browser" logoutput="true" /> 
   </target> 
