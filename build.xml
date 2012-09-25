@@ -48,7 +48,7 @@
   </target> 
   <target name="apigen" depends="prepare" description="Generování dokumentace"> 
     <apigen source="${project.basedir}/application" destination="${project.basedir}/build/docs" report="${project.basedir}/build/checkstyle-apigen.xml"/> 
-  </target>65 
+  </target> 
   <target name="phpcpd" depends="prepare" description="Kontrola CPD"> 
     <phpcpd> 
       <fileset refid="src"/> 
