@@ -18,8 +18,9 @@
   <target name="cleanup" description="Vyčistění workspace"> 
     <delete dir="${project.basedir}/build"/> 
   </target> 
-  <target name="prepare" depends="cleanup" description="Příprava workspace"> 
-    <mkdir dir="${project.basedir}/build"/> 
+  <target name="prepare" depends="cleanup" description="Příprava workspace">  
+    <mkdir dir="${project.basedir}/build"/>
+	
   </target> 
   <target name="lint" description="Kontrola pomocí PHP Lint"> 
     <phplint haltonfailure="true" level="info"> 
