@@ -1,4 +1,7 @@
-ci-test
+Ci-test
 =======
 
-testing repository for continuous integration
+Testing repository for Jenkins CI.
+
+
+
